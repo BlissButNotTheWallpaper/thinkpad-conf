@@ -16,7 +16,7 @@ done
 
 # lets make all the needed dirs in $HOME/.config/
 
-dotconf_dirs=("i3" "kitty" "rofi" "tmux")
+dotconf_dirs=("i3" "kitty" "rofi" "tmux" "i3status")
 
 for dotconf_dir in "${dotconf_dirs[@]}"; do
 	printf "making dir ~/.config/$dotconf_dir ...\n"
@@ -26,7 +26,8 @@ done
 # set up i3
 echo "setting up i3 ..."
 mv $HOME/thinkpad-conf/i3/config $HOME/.config/i3/
-
+echo "setting up i3status ..."
+mv $HOME/thinkpad-conf/i3/i3status.conf $HOME/.config/i3status/
 # set up kitty
 echo "setting up kitty terminal ..."
 mv $HOME/thinkpad-conf/kitty/kitty.conf $HOME/.config/kitty/
@@ -51,5 +52,7 @@ sudo mv $HOME/thinkpad-conf/screen-scale/90dpi /etc/X11/Xsession.d/
 echo "installing oh my zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
+sleep 30s
+echo "setting up .zshrc ..."
+mv $HOME/thinkpad-conf/zsh/zshrc $HOME/.zshrc
 
