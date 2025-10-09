@@ -52,7 +52,12 @@ sudo mv $HOME/thinkpad-conf/screen-scale/90dpi /etc/X11/Xsession.d/
 echo "installing oh my zsh ..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-sleep 30s
-echo "setting up .zshrc ..."
-mv $HOME/thinkpad-conf/zsh/zshrc $HOME/.zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+echo
+echo
+echo "############ hey set up zsh by yourself #############"
+echo
+echo "$ mv $HOME/thinkpad-conf/zsh/zshrc $HOME/.zshrc"
+echo
+echo "#####################################################"
