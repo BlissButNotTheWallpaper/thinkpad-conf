@@ -1,4 +1,8 @@
-
+nnoremap <silent> G   Gzz
+nnoremap <silent> j   jzz
+nnoremap <silent> k   kzz
+nnoremap <silent> {   {zz
+nnoremap <silent> }   }zz
 set background=dark
 inoremap jk <Esc>
 set number
