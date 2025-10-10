@@ -1,5 +1,14 @@
 #!/bin/bash
 
+################# BIG FUCKING WARNING ###################
+#							#
+#	THIS FUCKING SCRIPT IS ONLY MEANT TO BE		# 
+#	RUN FOR ONE TIME ONLY DONT BE BLAME ME		#
+#	IF YOU RE RUN AND AND EVERYTHINGS BROKEN,	#
+#	IVE FUCKING WARNED YOU ALL.			#
+#							#
+#########################################################
+
 #install all packages required
 
 packages=("i3" "kitty" "rofi" "tmux" "vim" "zsh")
@@ -63,3 +72,7 @@ echo
 echo "$ mv $HOME/thinkpad-conf/zsh/zshrc $HOME/.zshrc"
 echo
 echo "#####################################################"
+
+
+
+
