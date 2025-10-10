@@ -108,7 +108,6 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh shits 
 # Set up fzf key bindings and fuzzy completion
-alias vf='fzf --preview="cat {}" --bind "enter:become(vim {})"'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # tmux alias
