@@ -146,7 +146,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'" 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -189,13 +189,18 @@ assign [class="Virt-manager"] $ws5
 
 ############### launch with shortcuts ##################
 
-bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/"your other browser profile"
+bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/9xferehb.socials_and_accounts
 bindsym $mod+b exec --no-startup-id firefox 
 bindsym $mod+o exec --no-startup-id obsidian
 bindsym $mod+c exec --no-startup-id cherrytree
 bindsym $mod+t exec --no-startup-id kitty --title Terminal
+bindsym $mod+Return exec kitty -e tmux new-session -A -s main
 bindsym $mod+m exec --no-startup-id virt-manager
 bindsym $mod+p exec flameshot gui
+
+################ border stuffs #####################
+
+
 
 ################ misc ################
 
@@ -210,3 +215,7 @@ bar {
     }
 }
 
+
+############### wall
+
+exec --no-startup-id feh --bg-scale ~/Pictures/graf.jpg
