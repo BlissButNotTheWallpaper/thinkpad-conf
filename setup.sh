@@ -39,6 +39,8 @@ mv $HOME/thinkpad-conf/rofi/config.rasi $HOME/.config/rofi/
 # set up tmux
 echo "setting up tmux ..."
 mv $HOME/thinkpad-conf/tmux/tmux.conf $HOME/.config/tmux/
+mv $HOME/thinkpad-conf/tmux/fzf_cd.sh $HOME/.config/tmux/
+mv $HOME/thinkpad-conf/tmux/fzf_vim.sh $HOME/.config/tmux/
 
 # set up vim 
 echo "setting up vim ..." 
