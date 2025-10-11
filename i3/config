@@ -179,7 +179,7 @@ bindsym $mod+r mode "resize"
 
 assign [class="firefox"] $ws1
 assign [class="kitty"] $ws2
-assign [class="obsidian"] $ws3
+assign [class="VSCodium"] $ws3
 assign [class="Cherrytree"] $ws4
 assign [class="Virt-manager"] $ws5
 
@@ -191,22 +191,18 @@ assign [class="Virt-manager"] $ws5
 
 bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/9xferehb.socials_and_accounts
 bindsym $mod+b exec --no-startup-id firefox 
-bindsym $mod+o exec --no-startup-id obsidian
 bindsym $mod+c exec --no-startup-id cherrytree
 bindsym $mod+t exec --no-startup-id kitty --title Terminal
 bindsym $mod+Return exec kitty -e tmux new-session -A -s main
 bindsym $mod+m exec --no-startup-id virt-manager
 bindsym $mod+p exec flameshot gui
 
-################ border stuffs #####################
-
-
-
-################ misc ################
+################ compositor ################
 
 exec --no-startup-id picom -b
 
 ############### i3 bar ##############
+
 bar {
     status_command i3status --config ~/.config/i3status/i3status.conf 
     colors {
@@ -214,7 +210,6 @@ bar {
         statusline #ffffff
     }
 }
-
 
 ############### wall
 
