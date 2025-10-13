@@ -130,3 +130,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+################# launch tmux ###################
+
+bind -x '"\C-t": tmux new-session -A -s main'
