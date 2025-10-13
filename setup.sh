@@ -59,3 +59,11 @@ mv $HOME/thinkpad-conf/vim/vimrc $HOME/.vimrc
 echo "setting up scale display ..."
 sudo mv $HOME/thinkpad-conf/screen-scale/90dpi /etc/X11/Xsession.d/
 
+echo "making .local/bin"
+mkdir -p $HOME/.local/bin
+mkdir -p $HOME/.local/share
+
+# set up bashrc
+echo "setting up bashrc ..."
+mv $HOME/thinkpad-conf/bash/bashrc $HOME/.bashrc
+

@@ -115,8 +115,14 @@ if ! shopt -oq posix; then
 fi
 
 
-#################
+################# BINDINGS ##################
 
 bind -x '"\C-t": tmux new-session -A -s main'
 bind '"\C-k": "ls\n"'
 bind '"\C-h": "cd ..\n"'
+
+################# GO ##################
+
+export GOPATH="$HOME/.local/share/go"
+export GOBIN="$HOME/.local/bin"
+export PATH="$GOBIN:$PATH" 
