@@ -192,7 +192,7 @@ assign [class="Virt-manager"] $ws5
 bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/9xferehb.socials_and_accounts
 bindsym $mod+b exec --no-startup-id firefox 
 bindsym $mod+c exec --no-startup-id cherrytree
-bindsym $mod+Return exec kitty --title Terminal 
+bindsym $mod+Return exec --no-startup-id kitty 
 bindsym $mod+p exec flameshot gui
 
 ################ compositor ################
