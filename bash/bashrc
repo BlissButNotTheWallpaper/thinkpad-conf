@@ -50,14 +50,14 @@ parse_git_info() {
     if git rev-parse --is-inside-work-tree &>/dev/null; then
         branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
         [[ -n $(git status --porcelain 2>/dev/null) ]] && dirty='*' || dirty=''
-        echo "($branch$dirty)"
+        echo " ($branch$dirty)"
     fi
 }
 
 if [ "$color_prompt" = "no" ]; then
-    PS1='\u@\h \w $(parse_git_info) '
+    PS1='\u@\h \w$(parse_git_info) $ '
 else
-    PS1='\u@\h \w $(parse_git_info) '
+    PS1='\u@\h \w$(parse_git_info) $ '
 fi
 unset color_prompt force_color_prompt
 
@@ -126,3 +126,4 @@ bind '"\C-h": "cd ..\n"'
 export GOPATH="$HOME/.local/share/go"
 export GOBIN="$HOME/.local/bin"
 export PATH="$GOBIN:$PATH" 
+export PATH="/usr/local/go/bin:$PATH"
