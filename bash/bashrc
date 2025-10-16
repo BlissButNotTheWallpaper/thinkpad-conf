@@ -119,7 +119,8 @@ fi
 
 bind -x '"\C-t": tmux new-session -A -s main'
 bind '"\C-k": "ls\n"'
-bind '"\C-h": "cd ..\n"'
+bind '"\C-b": "cd ..\n"'
+bind '"\C-h": "cd\n"'
 
 ################# GO ##################
 

@@ -179,7 +179,9 @@ bindsym $mod+r mode "resize"
 
 assign [class="firefox"] $ws1
 assign [class="kitty"] $ws2
-assign [class="Cherrytree"] $ws4
+assign [class="Cherrytree"] $ws3
+assign [class="Xmind"] $ws4
+assign [class="install4j-burp-StartBurp"] $ws5
 
 ################ auto lunch apps #####################
 
@@ -187,7 +189,8 @@ assign [class="Cherrytree"] $ws4
 
 ############### launch with shortcuts ##################
 
-bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/5h3gg29h.default
+bindsym $mod+x exec --no-startup-id xmind
+bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/g5vp2j5z.bb
 bindsym $mod+b exec --no-startup-id firefox 
 bindsym $mod+c exec --no-startup-id cherrytree
 bindsym $mod+Return exec --no-startup-id kitty  
