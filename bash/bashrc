@@ -121,6 +121,7 @@ bind -x '"\C-t": tmux new-session -A -s main'
 bind '"\C-k": "ls\n"'
 bind '"\C-b": "cd ..\n"'
 bind '"\C-h": "cd\n"'
+bind -x '"\C-n": "xsct 2500"'
 
 ################# GO ##################
 
@@ -128,3 +129,9 @@ export GOPATH="$HOME/.local/share/go"
 export GOBIN="$HOME/.local/bin"
 export PATH="$GOBIN:$PATH" 
 export PATH="/usr/local/go/bin:$PATH"
+
+################ aliases ##################
+
+alias tn="tmux new-session -s"
+alias ta="tmux attach-session"
+alias tl="tmux list-sessions"
