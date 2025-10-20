@@ -1,14 +1,5 @@
 #!/bin/bash
 
-################# BIG FUCKING WARNING ###################
-#							#
-#	THIS FUCKING SCRIPT IS ONLY MEANT TO BE		# 
-#	RUN FOR ONE TIME ONLY DONT BE BLAME ME		#
-#	IF YOU RE RUN AND AND EVERYTHINGS BROKEN,	#
-#	IVE FUCKING WARNED YOU ALL.			#
-#							#
-#########################################################
-
 #install all packages required
 
 packages=("i3" "kitty" "rofi" "tmux" "vim" "fzf" "cherrytree" "flameshot" "tlp")
@@ -66,4 +57,8 @@ mkdir -p $HOME/.local/share
 # set up bashrc
 echo "setting up bashrc ..."
 mv $HOME/thinkpad-conf/bash/bashrc $HOME/.bashrc
+
+# make dev dir in home
+
+mkdir -p $HOME/dev
 
