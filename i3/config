@@ -198,8 +198,6 @@ bindsym $mod+p exec --no-startup-id flameshot gui
 
 ################ compositor ################
 
-exec --no-startup-id picom -b
-
 ############### i3 bar ##############
 
 bar {
@@ -210,6 +208,3 @@ bar {
     }
 }
 
-############### wall
-
-exec --no-startup-id feh --bg-scale ~/Pictures/graf.jpg

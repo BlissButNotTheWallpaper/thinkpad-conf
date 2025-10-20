@@ -11,7 +11,7 @@
 
 #install all packages required
 
-packages=("i3" "kitty" "rofi" "tmux" "vim" "fzf" "cherrytree" "picom" "flameshot" "tlp")
+packages=("i3" "kitty" "rofi" "tmux" "vim" "fzf" "cherrytree" "flameshot" "tlp")
 
 printf "Updating ...\n"
 sudo apt update
