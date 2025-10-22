@@ -1,3 +1,3 @@
 #!/bin/bash
-tmux new-window "bash -i -c 'DIR=\$(fdfind . "$HOME" --type directory --hidden --max-depth 3 --exclude '**/.cache' --exclude '**/.mozilla' --exclude '**autostart'| fzf --preview \"ls -l {}\" --height 50%); [ -n \"\$DIR\" ] && cd \"\$DIR\" && exec bash'"
+tmux new-window "bash -i -c 'DIR=\$(fdfind . "$HOME" --type directory --hidden --max-depth 3 --exclude '**/.cache' --exclude '**/.mozilla' --exclude '**autostart' --exclude '**.java' --exclude '**.vscode-oss' --exclude '**VSCodium' | fzf --height 50%); [ -n \"\$DIR\" ] && cd \"\$DIR\" && exec bash'"
 

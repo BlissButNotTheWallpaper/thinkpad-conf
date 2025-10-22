@@ -2,7 +2,7 @@
 
 #install all packages required
 
-packages=("i3" "kitty" "rofi" "tmux" "vim" "fzf" "cherrytree" "flameshot" "tlp")
+packages=("i3" "rofi" "tmux" "vim" "fzf" "cherrytree" "flameshot" "tlp")
 
 printf "Updating ...\n"
 sudo apt update
@@ -16,7 +16,7 @@ done
 
 # lets make all the needed dirs in $HOME/.config/
 
-dotconf_dirs=("i3" "kitty" "rofi" "tmux" "i3status")
+dotconf_dirs=("i3" "rofi" "tmux" "i3status")
 
 for dotconf_dir in "${dotconf_dirs[@]}"; do
 	printf "making dir ~/.config/$dotconf_dir ...\n"
@@ -28,9 +28,6 @@ echo "setting up i3 ..."
 mv $HOME/thinkpad-conf/i3/config $HOME/.config/i3/
 echo "setting up i3status ..."
 mv $HOME/thinkpad-conf/i3/i3status.conf $HOME/.config/i3status/
-# set up kitty
-echo "setting up kitty terminal ..."
-mv $HOME/thinkpad-conf/kitty/kitty.conf $HOME/.config/kitty/
 
 # set up rofi
 echo "setting up rofi ..."
@@ -62,3 +59,6 @@ mv $HOME/thinkpad-conf/bash/bashrc $HOME/.bashrc
 
 mkdir -p $HOME/dev
 
+#set up xfce terminal 
+
+mv $HOME/thinkpad-conf/xfce-terminal/xfce4-terminal.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/

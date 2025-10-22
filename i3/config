@@ -178,10 +178,10 @@ bindsym $mod+r mode "resize"
 ################ assign to workplace #################
 
 assign [class="firefox"] $ws1
-assign [class="kitty"] $ws2
+assign [class="Xfce4-terminal"] $ws2
 assign [class="Cherrytree"] $ws3
 assign [class="Xmind"] $ws4
-assign [class="install4j-burp-StartBurp"] $ws5
+#assign [class="install4j-burp-StartBurp"] $ws5
 
 ################ auto lunch apps #####################
 
@@ -190,13 +190,13 @@ assign [class="install4j-burp-StartBurp"] $ws5
 ############### launch with shortcuts ##################
 
 bindsym $mod+x exec --no-startup-id xmind
-bindsym $mod+v exec --no-startup-id firefox -profile $HOME/.mozilla/firefox/g5vp2j5z.bb
 bindsym $mod+b exec --no-startup-id firefox 
 bindsym $mod+c exec --no-startup-id cherrytree
-bindsym $mod+Return exec --no-startup-id kitty  
+bindsym $mod+Return exec --no-startup-id xfce4-terminal  
 bindsym $mod+p exec --no-startup-id flameshot gui
 
 ################ compositor ################
+
 
 ############### i3 bar ##############
 
